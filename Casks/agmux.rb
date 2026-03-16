@@ -3,7 +3,7 @@ cask "agmux" do
   name "agmux"
   desc "Agent orchestration for tmux — manage AI coding agents across sessions"
   homepage "https://github.com/trentkm/agmux"
-  version "0.3.0"
+  version "0.4.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "agmux" do
   on_macos do
     on_intel do
       url "https://github.com/trentkm/agmux/releases/download/v#{version}/agmux_darwin_amd64.tar.gz"
-      sha256 "a7df2eeac8de7c9dcac259009c120e1d3b614689fbd4c3c10c414bd3fd9e1644"
+      sha256 "996ebe85c76945b314456a91c4b78abe2d911741d2231e9b2b6f8044af7be04e"
     end
     on_arm do
       url "https://github.com/trentkm/agmux/releases/download/v#{version}/agmux_darwin_arm64.tar.gz"
-      sha256 "241fd1c7c678c89612a194f88598a23147634cded1dd169c741e6ebf0d37bd80"
+      sha256 "981983fc583d49d11f73a0b1b8d54d3d9d18ece1b87bf495617fd43413e617e7"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/trentkm/agmux/releases/download/v#{version}/agmux_linux_amd64.tar.gz"
-      sha256 "1e5d60ba8e2960c9847696472e279cb2ec6107a77ae381528009b5f0ce87e401"
+      sha256 "ba3b52a7f1cfa999564660f4c70b4823950f5d9e2aca74aabdae568ec83cb9fa"
     end
     on_arm do
       url "https://github.com/trentkm/agmux/releases/download/v#{version}/agmux_linux_arm64.tar.gz"
-      sha256 "1c8c64c2e7591c98766e8ecb332a9c175a0ddfc17098073691412c183dd3afee"
+      sha256 "bce91e3850413eefd567c47bf73483c8a036535c877851d4ab02abe4c26e5261"
     end
   end
 
