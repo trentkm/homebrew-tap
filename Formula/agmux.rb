@@ -5,21 +5,21 @@
 class Agmux < Formula
   desc "Agent orchestration for tmux — manage AI coding agents across sessions"
   homepage "https://github.com/trentkm/agmux"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/trentkm/agmux/releases/download/v0.6.0/agmux_darwin_amd64.tar.gz"
-      sha256 "3a0b3f92a3bd04638b66cbad309778cb310c5a4289ba505f8fa39e2b1b3529fa"
+      url "https://github.com/trentkm/agmux/releases/download/v0.6.1/agmux_darwin_amd64.tar.gz"
+      sha256 "91b45bfc398fd619998fec630a6335248e0acebb4523e357d79c11ebc1ecedc5"
 
       define_method(:install) do
         bin.install "agmux"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/trentkm/agmux/releases/download/v0.6.0/agmux_darwin_arm64.tar.gz"
-      sha256 "3bbbf3a020e59cba85e52ecc29bf2f8faa7906ddb4684f5929681014081fc98a"
+      url "https://github.com/trentkm/agmux/releases/download/v0.6.1/agmux_darwin_arm64.tar.gz"
+      sha256 "8a7453cbaac50e5dd2b2c043cbea4078431551ab1972dc6b7608ae9fa9319f03"
 
       define_method(:install) do
         bin.install "agmux"
@@ -29,15 +29,15 @@ class Agmux < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/trentkm/agmux/releases/download/v0.6.0/agmux_linux_amd64.tar.gz"
-      sha256 "b63563228c617c383de3488c2cc26c1bbf1e3e291a6ca012d350e21006a84e0a"
+      url "https://github.com/trentkm/agmux/releases/download/v0.6.1/agmux_linux_amd64.tar.gz"
+      sha256 "48099ab71b3185454fcbe33568a5b17939fc39587835c0206ca804284511f1ba"
       define_method(:install) do
         bin.install "agmux"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/trentkm/agmux/releases/download/v0.6.0/agmux_linux_arm64.tar.gz"
-      sha256 "6b730123ed15ee5662083c30857b555fa4a4521ffe24d0794ae508870e73a546"
+      url "https://github.com/trentkm/agmux/releases/download/v0.6.1/agmux_linux_arm64.tar.gz"
+      sha256 "783f238b3ae17683789253525ce96cf729e6691ba8719af3ae440918d8d8afd4"
       define_method(:install) do
         bin.install "agmux"
       end
